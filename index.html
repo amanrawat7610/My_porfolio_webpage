@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aman Singh Rawat | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PORT<span>FOLIO</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#about">Journey</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+        <div class="nav-btns">
+            <button id="theme-toggle" class="theme-btn"><i class="fa-solid fa-moon"></i></button>
+            <a href="My_resume.pdf" target="_blank" class="cv-btn">Download CV/Resume</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Aman Singh Rawat</h1>
+            <p class="role">Data Analyst & <span class="typing-container"><span class="typing-text">Visualization Expert</span></span></p>
+            
+            <div class="tech-stack">
+                <i class="fa-solid fa-file-excel" title="Excel" style="color: #1D6F42;"></i>
+                <i class="fa-solid fa-database" title="SQL" style="color: #00758F;"></i>
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iI0YyQzgyNyIgZD0iTTEwIDExaDR2MjFoLTR6Ii8+PHBhdGggZmlsbD0iI0U2QUQyNCIgZD0iTTE2IDVoNHYyN2gtNHoiLz48cGF0aCBmaWxsPSIjRjJDOTExIiBkPSJNMjIgMmg0djMwaC00eiIvPjxwYXRoIGZpbGw9IiNGMkM4MjciIGQ9Ik00IDE3aDR2MTVINC96Ii8+PC9zdmc+" 
+                     alt="Power BI" title="Power BI" class="pbi-logo">
+                <i class="fa-solid fa-chart-pie" title="Tableau" style="color: #E97627;"></i>
+                <i class="fa-brands fa-python" title="Python" style="color: #3776AB;"></i>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/aman-singh-rawat-330803229" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://share.google/Kur2sMGWEiEXEcE6D" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://drive.google.com/drive/folders/1X6R2JDrNPnH4fPs_Cc-yxxDkZtG1hZMd?usp=sharing" target="_blank" title="Google Drive"><i class="fa-brands fa-google-drive"></i></a>
+            </div>
+
+            <div class="hero-btns">
+                <a href="projects.html" class="btn primary">View Projects</a>
+                <a href="javascript:void(0)" onclick="openModal()" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <div class="img-box">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+                <img src="Aman.png" alt="Aman Singh Rawat"> 
+            </div>
+        </div>
+    </section>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Contact Details</h2>
+            <div class="contact-details">
+                <p><i class="fa-solid fa-phone"></i> +91-7037837610</p>
+                <p><i class="fa-solid fa-envelope"></i> amanrawat7610@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i> amansinghrawat7037@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats">
+        <div class="stat-item"><h2>5+</h2><p>Projects</p></div>
+        <div class="stat-item"><h2>4+</h2><p>Certifications</p></div>
+        <div class="stat-item"><h2>5000+</h2><p>Data Rows</p></div>
+    </section>
+
+    <section id="about-me" class="about-me-container">
+        <div class="about-text">
+            <h2 class="section-title-alt">GET TO <span>KNOW ME</span></h2>
+            <p>I am a data analyst specializing in KPI design, customer analytics, and dashboard reporting. I enjoy breaking complex data into simple insights that help teams make smarter decisions.</p>
+        </div>
+        
+        <div class="strengths-box">
+            <h3>My strengths:</h3>
+            <ul>
+                <li>Data Cleaning & Validation</li>
+                <li>Dashboard Automation</li>
+                <li>Business Problem Solving</li>
+                <li>Storytelling with data</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">Academic Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="time">2020 - 2023</div>
+                <h4>Polytechnic Diploma</h4>
+                <p>Govt. Polytechnic Jaknidhar, Tehri Garhwal,Uttarakhand</p>
+            </div>
+            <div class="timeline-item">
+                <div class="time">2023 - 2026</div>
+                <h4>Bachelor of Technology (B.Tech)</h4>
+                <p>Uttarakhand Technical University, Dehradun,Uttarakhand</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certs">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <i class="fa-solid fa-award" style="color: #86bc25;"></i>
+                <h3>Deloitte Data Analytics</h3>
+                <p>Forensic Tech & Analysis Job Simulation.</p>
+                <a href="Deloitte.pdf" target="_blank" class="view-btn-small">View PDF</a>
+            </div>
+            <div class="cert-card">
+                <i class="fa-solid fa-robot" style="color: #f7df1e;"></i>
+                <h3>AI-Powered Data Analytics</h3>
+                <p>Course by CodeWithHarry. Completed: March 2026.</p>
+                <a href="Data anlytics code with harry certificate.pdf" target="_blank" class="view-btn-small">View PDF</a>
+            </div>
+            <div class="cert-card">
+                <i class="fa-solid fa-chart-pie" style="color: #0078d4;"></i>
+                <h3>Microsoft Power BI</h3>
+                <p>Infosys Springboard Certification.</p>
+                <a href="power BI certification by infosys.pdf" target="_blank" class="view-btn-small">View PDF</a>
+            </div>
+            <div class="cert-card">
+                <i class="fa-brands fa-google-drive" style="color: #34a853;"></i>
+                <h3>Project Assets</h3>
+                <p>Excel, SQL and Tableau files.</p>
+                <a href="https://drive.google.com/drive/folders/1X6R2JDrNPnH4fPs_Cc-yxxDkZtG1hZMd?usp=sharing" target="_blank" class="view-btn-small">Open Drive</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Aman Singh Rawat</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
