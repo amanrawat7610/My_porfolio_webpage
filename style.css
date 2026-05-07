@@ -27,21 +27,19 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
 .theme-btn { background: none; color: var(--text); font-size: 20px; cursor: pointer; transition: 0.3s; }
 .cv-btn { background: var(--main); color: #fff; padding: 8px 20px; border-radius: 5px; font-weight: 600; }
 
-/* Tech Stack Icons & Power BI Logo */
-/* Tech Stack Layout Fix */
-/* Tech Stack - Single Line */
+/* Tech Stack */
 .tech-stack {
     margin: 20px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
-    flex-wrap: nowrap; /* 👈 sab ek line me */
+    flex-wrap: nowrap;
 }
 
 .tech-stack i,
 .pbi-logo {
-    font-size: 40px; /* 👈 thoda bada */
+    font-size: 40px;
     width: 40px;
     height: 40px;
     transition: 0.3s;
@@ -84,12 +82,12 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     animation: typing 3.5s steps(20) forwards, blink 0.7s infinite; 
 }
 
-/* Get To Know Me Section Styles */
+/* About Me Section */
 .about-me-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 10%;
+    padding: 50px 10%;
     gap: 50px;
     background: var(--bg);
 }
@@ -113,7 +111,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     max-width: 500px;
 }
 
-/* Strengths Box with Gradient */
+/* Strengths Box */
 .strengths-box {
     flex: 1;
     background: linear-gradient(135deg, #b8ffd1 0%, #a2c2ff 100%);
@@ -145,11 +143,25 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     font-size: 25px;
 }
 
-/* Profile Image Layout */
+/* Profile Image */
 .hero-img { position: relative; display: flex; justify-content: center; align-items: center; }
 .img-box { position: relative; width: 380px; height: 380px; display: flex; justify-content: center; align-items: center; }
 .img-box::before { content: ''; position: absolute; width: 105%; height: 105%; border: 2px dashed var(--main); border-radius: 50%; animation: rotateRing 12s linear infinite; }
-.img-box img { width: 90%; height: 90%; object-fit: cover; border-radius: 50%; border: 5px solid var(--main); z-index: 2; filter: drop-shadow(0 0 15px var(--main)); }
+
+/* ✅ FIXED: Uses scale and exact percentage offsets to pull your hair right to the border boundary */
+.img-box img { 
+    width: 90%; 
+    height: 90%; 
+    object-fit: cover; 
+    object-position: center 15%; 
+    transform: scale(1.05);
+    border-radius: 50%; 
+    border: 5px solid var(--main); 
+    z-index: 2; 
+    
+    filter: drop-shadow(0 0 15px var(--main)); 
+}
+
 .shape-1, .shape-2 { position: absolute; background: var(--main); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; z-index: 1; filter: blur(40px); opacity: 0.3; animation: morph 8s linear infinite; }
 .shape-1 { width: 300px; height: 300px; top: -10px; left: -10px; }
 .shape-2 { width: 250px; height: 250px; bottom: -10px; right: -10px; background: #fff; animation-delay: -4s; }
@@ -161,10 +173,10 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
 @keyframes morph { 0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; } 50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; } }
 
 /* Stats & Sections */
-.stats { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 60px; padding: 60px 10%; background: var(--second-bg); text-align: center; }
+.stats { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 60px; padding: 40px 10%; background: var(--second-bg); text-align: center; }
 .stat-item h2 { color: var(--main); font-size: 45px; }
-.section-title { text-align: center; font-size: 40px; margin: 60px 0; color: var(--text); }
-.about, .certs { padding: 40px 10%; }
+.section-title { text-align: center; font-size: 40px; margin: 30px 0; color: var(--text); }
+.about, .certs { padding: 25px 10%; }
 .timeline-item, .cert-card { background: var(--second-bg); padding: 25px; border-radius: 15px; border-left: 5px solid var(--main); transition: 0.3s; margin-bottom: 20px; }
 .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 .cert-card { text-align: center; border: 1px solid rgba(0,171,240,0.1); }
@@ -190,7 +202,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
 .btn.secondary { border: 2px solid var(--main); color: var(--main); }
 .footer { text-align: center; padding: 40px; border-top: 1px solid var(--second-bg); color: var(--text); }
 
-/* Projects Page Styles */
+/* Projects Page */
 .projects-page { 
     padding: 140px 10% 80px; 
     background: var(--bg);
@@ -205,22 +217,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
 .projects-page .section-title span {
     color: var(--main);
 }
-/* Section spacing optimize */
-.about-me-container {
-    padding: 50px 10%; /* 80px → 50px */
-}
 
-.stats {
-    padding: 40px 10%; /* 60px → 40px */
-}
-
-.about, .certs {
-    padding: 25px 10%; /* 40px → 25px */
-}
-
-.section-title {
-    margin: 30px 0; /* 60px → 30px */
-}
 .projects-wrapper {
     display: flex;
     flex-direction: column;
@@ -235,13 +232,8 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     margin-bottom: 40px;
 }
 
-.project-card.reverse {
-    direction: rtl;
-}
-
-.project-card.reverse > * {
-    direction: ltr;
-}
+.project-card.reverse { direction: rtl; }
+.project-card.reverse > * { direction: ltr; }
 
 .project-image {
     position: relative;
@@ -271,10 +263,8 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
 
 .image-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     background: rgba(0, 171, 240, 0.1);
     display: flex;
     align-items: flex-end;
@@ -283,9 +273,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     transition: 0.4s ease;
 }
 
-.project-image:hover .image-overlay {
-    opacity: 1;
-}
+.project-image:hover .image-overlay { opacity: 1; }
 
 .project-number {
     font-size: 60px;
@@ -294,9 +282,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     opacity: 0.2;
 }
 
-.project-content {
-    padding: 20px;
-}
+.project-content { padding: 20px; }
 
 .project-title {
     font-size: 32px;
@@ -329,9 +315,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     border-color: var(--main);
 }
 
-.project-description {
-    margin-bottom: 25px;
-}
+.project-description { margin-bottom: 25px; }
 
 .project-description p {
     font-size: 16px;
@@ -341,9 +325,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     opacity: 0.9;
 }
 
-.project-description p:last-child {
-    margin-bottom: 0;
-}
+.project-description p:last-child { margin-bottom: 0; }
 
 .project-link {
     display: inline-flex;
@@ -365,44 +347,29 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     box-shadow: 0 6px 25px rgba(0, 171, 240, 0.4);
 }
 
-.project-link i {
-    transition: 0.3s ease;
-}
+.project-link i { transition: 0.3s ease; }
+.project-link:hover i { transform: translateX(3px); }
 
-.project-link:hover i {
-    transform: translateX(3px);
-}
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    /* Navbar fix */
-    .navbar { 
-        padding: 15px 5%; 
-        justify-content: space-between;
-    }
-
+    .navbar { padding: 15px 5%; justify-content: space-between; }
     .nav-links { display: none; }
-    
-    /* 👇 YEH IMPORTANT FIX HAI */
-    .logo {
-        margin-right: 20px; /* Logo aur buttons ke beech gap */
-    }
+    .logo { margin-right: 20px; }
+    .nav-btns { margin-left: auto; padding-right: 10px; gap: 20px; }
+    .theme-btn { padding: 5px; }
 
-    .nav-btns { 
-        margin-left: auto;
-        padding-right: 10px;
-        gap: 20px; /* Theme button aur CV button ke beech gap */
-    }
-
-    .theme-btn {
-        padding: 5px; /* Click area + spacing improve */
-    }
-
-    /* Baaki same */
     .hero { flex-direction: column-reverse; text-align: center; padding: 120px 5% 50px; height: auto; }
     .hero-content h1 { font-size: 36px; }
-    .tech-stack, .role, .about-me-container { flex-direction: column; text-align: center; justify-content: center; }
+    .tech-stack { overflow-x: auto; justify-content: center; padding-bottom: 10px; }
+    .role, .about-me-container { flex-direction: column; text-align: center; justify-content: center; }
     .about-text p { margin: 0 auto 20px; }
     .img-box { width: 280px; height: 280px; margin: 0 auto; }
-    
+
+    .about-me-container { padding: 30px 5%; }
+    .stats { padding: 25px 5%; }
+    .about, .certs { padding: 20px 5%; }
+    .section-title { margin: 20px 0; }
+
     .projects-page { padding: 120px 5% 50px; }
     .projects-page .section-title { font-size: 32px; margin-bottom: 50px; }
     .projects-wrapper { gap: 60px; }
@@ -412,30 +379,4 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     .project-title { font-size: 24px; }
     .project-content { padding: 15px; }
     .project-description p { font-size: 14px; }
-    
-    @media (max-width: 768px) {
-
-    .about-me-container {
-        padding: 30px 5%;
-    }
-
-    .stats {
-        padding: 25px 5%;
-    }
-
-    .about, .certs {
-        padding: 20px 5%;
-    }
-
-    .section-title {
-        margin: 20px 0;
-    }
-@media (max-width: 768px) {
-    .tech-stack {
-        overflow-x: auto; /* 👈 scroll aa jayega */
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-}
-}
 }
