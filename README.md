@@ -1,3 +1,7 @@
+<img width="1886" height="911" alt="image" src="https://github.com/user-attachments/assets/374e27d7-8820-4cb5-9a21-e408d6c9d9a9" />
+
+
+
 📌 Portfolio Website
 
 🚀 About the Project This is my personal portfolio website where I showcase my skills, projects, certifications, and professional background. The main purpose of this project is to present my work in an organized and visually appealing way.
