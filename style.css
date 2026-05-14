@@ -222,6 +222,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     display: flex;
     flex-direction: column;
     gap: 100px;
+    padding-bottom: 40px;
 }
 
 .project-card {
@@ -298,6 +299,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .tag {
@@ -316,13 +318,13 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     border-color: var(--main);
 }
 
-.project-description { margin-bottom: 25px; }
+.project-description { margin-bottom: 30px; max-width: 100%; }
 
 .project-description p {
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.6;
     color: var(--text);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     opacity: 0.9;
 }
 
@@ -389,7 +391,7 @@ body { background: var(--bg); color: var(--text); overflow-x: hidden; transition
     .projects-wrapper { gap: 120px; }
     .project-card { flex-direction: column; gap: 50px; align-items: stretch; }
     .project-image { height: 520px; }
-    .project-content { padding: 40px 0; }
+    .project-content { padding: 40px 0; max-width: 100%; }
     .project-title { font-size: 40px; margin-bottom: 30px; order: -1; }
-    .project-description p { font-size: 16px; line-height: 1.8; }
+    .project-description p { font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
 }
